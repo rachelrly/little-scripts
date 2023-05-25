@@ -4,5 +4,5 @@ message="fixes merge conflict"
 else 
 message="$1"
 fi
-git commit --allow-empty -m "$message"
+git commit -m "$message"
 git push

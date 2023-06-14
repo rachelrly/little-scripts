@@ -1,0 +1,4 @@
+message="fixes merge conflict" && [[ $1 == "fmc" ]] && message="$1"
+git commit 
+--allow-empty -m 
+message git push

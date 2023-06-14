@@ -1,0 +1,7 @@
+rails db:drop
+rails db:create
+rails db:migrate
+rails c <<EOF
+Flipper.enable :dpa
+Flipper.enable :use_limitations
+EOF

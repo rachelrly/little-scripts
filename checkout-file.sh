@@ -1,5 +1,6 @@
 branch="main"
 if [ $# -eq 2 ]
+then
 branch="$2"
 fi
 git checkout $branch -- $1

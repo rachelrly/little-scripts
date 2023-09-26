@@ -8,5 +8,5 @@ fi
 echo "${GREEN}Replacing $1 with version from $branch${NC} branch"
 git checkout $branch -- $1
 git add $1
-git commit -m "replacing $1 with version from $branch"
+git commit -m "replaces $1 with version from $branch"
 git push

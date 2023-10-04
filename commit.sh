@@ -4,9 +4,9 @@ message="fixes merge conflict"
 elif [ "$1" = "r" ]
 then
 message="fixes for rubocop"
-elif [ "$1" = "rep" ]
+elif [ "$1" = "s" ]
 then
-message="replaces unchanged files with ones from main"
+message="stores changes to do stuff on another branch"
 else 
 message="$1"
 fi

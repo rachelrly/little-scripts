@@ -13,10 +13,11 @@ message="stores changes to merge in new main"
 else 
 message="$1"
 fi
-git commit -m "$message"
+git commit -m "$message" --allow-empty
 git push
 
 if [ "$1" = "m" ]
+then
 # alias for "git checkout main && git checkout - && git merge main"
 echo "Switching branches to merge in new main"
 gm

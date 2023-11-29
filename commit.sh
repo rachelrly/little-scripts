@@ -18,7 +18,9 @@ git push
 
 if [ "$1" = "m" ]
 then
-# alias for "git checkout main && git checkout - && git merge main"
 echo "Switching branches to merge in new main"
-gm
+git checkout main
+git pull
+git checkout -
+git merge -
 fi

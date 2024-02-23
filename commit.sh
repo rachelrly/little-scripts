@@ -1,6 +1,11 @@
 if [ "$1" = "fmc" ] 
 then
 message="fixes merge conflict"
+elif [ "$1" = "db" ]
+then
+rails db:migrate:with_data
+git add db/
+message="fixes database merge conflict"
 elif [ "$1" = "r" ]
 then
 message="fixes for rubocop"

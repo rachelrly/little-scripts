@@ -1,3 +1,10 @@
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+if [ "$current_branch" = "main" ]; then
+    echo "Stop trying to push to the main branch, Rachel"
+    exit 1
+fi
+
 if [ "$1" = "fmc" ] 
 then
 message="fixes merge conflict"

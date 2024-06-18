@@ -17,7 +17,7 @@ git add db/
 message="fixes database merge conflict"
 elif [ "$1" = "r" ]
 then
-message="fixes for rubocop"
+message="fixes for rubocop or eslint"
 elif [ "$1" = "s" ]
 then
 message="stores changes to do stuff on another branch"

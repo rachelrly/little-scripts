@@ -10,6 +10,9 @@ fi
 if [ "$1" = "fmc" ] 
 then
 message="merges in new main branch and fixes merge conflict"
+elif [ "$1" = "ff" ]
+then
+message="removes feature flags"
 elif [ "$1" = "db" ]
 then
 rails db:migrate:with_data

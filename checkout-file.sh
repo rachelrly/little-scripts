@@ -44,5 +44,5 @@ fi
 echo "${GREEN}Replacing '$1' with version from '$target_branch' branch.${NC}"
 git checkout "$target_branch" -- "$1"
 git add "$1"
-git commit -m "Replaces '$1' with version from $target_branch"
+git commit -m "replaces '$1' with version from $target_branch"
 git push

@@ -1,12 +1,12 @@
 # Prevent pushing to main or master branch
 if [[ "$current_branch" == "main" || "$current_branch" == "master" ]]; then
-    echo -e "\n${RED}Stop trying to push to the main or master branch, Rachel!${NC}\n"
+    echo "\n${RED}Stop trying to push to the main or master branch, Rachel!${NC}\n"
     exit 1
 fi
 
 # Check if an argument is passed
 if [ -z "$1" ]; then
-    echo -e "${RED}Please provide a commit message or shortcut!${NC}"
+    echo "${RED}Please provide a commit message or shortcut!${NC}"
     exit 1
 fi
 

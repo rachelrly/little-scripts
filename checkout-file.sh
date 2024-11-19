@@ -30,19 +30,19 @@ fi
 
 # Check if the file exists in the current directory
 if [ ! -f "$1" ]; then
-  echo "${RED}Error: File '$1' not found.${NC}"
+  echo "${RED}Error: File $1 not found.${NC}"
   exit 1
 fi
 
 # Check if the target branch exists
 if ! git show-ref --verify --quiet "refs/heads/$target_branch"; then
-  echo "${RED}Error: Branch '$target_branch' does not exist.${NC}"
+  echo "${RED}Error: Branch $target_branch does not exist.${NC}"
   exit 1
 fi
 
 # Perform the file checkout and commit
-echo "${GREEN}Replacing '$1' with version from '$target_branch' branch.${NC}"
+echo "${GREEN}Replacing $1 with version from $target_branch branch.${NC}"
 git checkout "$target_branch" -- "$1"
 git add "$1"
-git commit -m "replaces '$1' with version from $target_branch"
+git commit -m "replaces $1 with version from $target_branch"
 git push

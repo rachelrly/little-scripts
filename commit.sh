@@ -3,8 +3,8 @@ RED='\033[0;31m'
 NC='\033[0m'
 
 # Prevent pushing to main or master branch
-if [[ "$current_branch" == "main" || "$current_branch" == "master" ]]; then
-    echo "\n${RED}Stop trying to push to the main or master branch, Rachel!${NC}\n"
+if [ "$current_branch" == "main" ]; then
+    echo "\n${RED}Stop trying to push to the main branch, Rachel!${NC}\n"
     exit 1
 fi
 

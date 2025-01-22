@@ -2,6 +2,8 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 NC='\033[0m'
 
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
 # Prevent pushing to main or master branch
 if [ "$current_branch" == "main" ]; then
     echo "\n${RED}Stop trying to push to the main branch, Rachel!${NC}\n"

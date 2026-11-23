@@ -1,4 +1,4 @@
-# little-scripts
+# Little Workflow Scripts
 
 These are hand-written scripts I used to navigate and make things more efficient before AI. I still use them when I switch branches manually.
 
